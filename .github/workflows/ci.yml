@@ -14,3 +14,12 @@ jobs:
     - name: install TS dependencies
       run: npm install
       working-directory: DotnetTemplate.Web
+    - name: build TS
+      run: npm run build
+      working-directory: DotnetTemplate.Web
+    - name: lint TS
+      run: npm run lint
+      working-directory: DotnetTemplate.Web
+    - name: test TS
+      run: npm t
+      working-directory: DotnetTemplate.Web
